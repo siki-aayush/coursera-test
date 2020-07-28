@@ -69,11 +69,6 @@ body {
   border: 2px solid #3f0c1f;
 }
 
-.container .jumbotron img {
-  width: 100%;
-  height: 800px;
-}
-
 #menu-tile, #special-tile, #map-tile {
   height: 250px;
   width: 100%;
@@ -81,7 +76,6 @@ body {
   position: relative;
   overflow: hidden;
   border: 2px solid #3f0c1f;
-  /* background: url("../images/chowmin.jpg") no-repeat; */
 }
 
 #menu-tile:hover, #special-tile:hover, #map-tile:hover{
@@ -113,12 +107,126 @@ body {
   color: #fff;
   opacity: 0.7;
 }
+
+.panel-footer {
+  margin-top: 30px;
+  padding: 30px 0px;
+  background-color: #222;
+  border-top: 0;
+}
+
+.panel-footer div.row {
+  margin-bottom: 20px;
+}
+
+#hours > span, #address > span {
+  font-size: 1.3em;
+}
+
+#hours, #address {
+  line-height: 1.7;
+}
+
+#address p {
+  color: #557c3e;
+  font-size: 0.8em;
+  line-height: 1.5;
+}
+
+#testimonials {
+  font-style: italic;
+}
+
+#testimonials p:nth-child(2) {
+  margin-top: 25px;
+}
+
+.category-tile {
+  position: relative;
+  width: 200px;
+  height: 200px;
+  margin: 0 auto 15px;
+  box-shadow: 4px 4px 30px #222;
+}
+.category-tile span {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 200px;
+  font-size: 1.2em;
+  text-align: center;
+  text-transform: capitalize;
+  background-color: #000;
+  color: #fff;
+  opacity: .6;
+}
+
+.category-tile:hover {
+  box-shadow: 0 1px 5px 2px #ccc;
+}
+
+#menu-categories-title {
+  margin-bottom: 25px;
+}
+
+#menu-categories-title + div {
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 1.2em;
+}
+
+.menu-item-tile {
+  margin-bottom: 25px;
+}
+
+.menu-item-tile hr {
+  width: 90%;
+}
+
+.menu-item-tile .menu-item-price {
+  font-size: 1.2em;
+  text-align: center;
+  margin: 5px 0;
+}
+
+.menu-item-tile .menu-item-price span {
+  font-size: .6em;
+}
+
+.menu-item-photo {
+  position: relative;
+  border: 2px solid #3F0C1F;
+  overflow: hidden;
+  padding: 0;
+  max-width: 250px;
+}
+
+.menu-item-photo div {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 80px;
+  background: #557c3e;
+  text-align: center;
+}
+
+.menu-item-description {
+  padding-right: 20px;
+}
+
+h3.menu-item-title {
+  margin: 0 0 20px;
+}
+
+.menu-item-details {
+  font-style: italic;
+}
+
 /* large devices */
 @media (min-width: 1200px) {
-  .container .jumbtron {
+  .container .jumbotron {
+    background: url("../images/doraemon.webp");
     height: 675px;
-    box-shadow: 0 0 50px #3f0c1f;
-    border: 2px solid #3f0c1f;
   } 
 }
 
@@ -128,11 +236,19 @@ body {
     width: 100px;
     height: 100px;
   }
+
+  .container .jumbotron {
+    background: url("../images/doraemon.webp");
+    height: 675px;
+  }
 }
 
 /* small devices */
 @media (min-width: 768px) and (max-width: 991px) {
-
+  .container .jumbotron {
+    background: url("../images/doraemon.webp");
+    height: 675px;
+  }
 }
 
 /* extra small devices */
@@ -159,9 +275,25 @@ body {
     width: 360px;
     margin: 0 auto 15px;
   }
+  .menu-item-photo {
+    margin: auto;
+  }
+
+  h3.menu-item-title {
+    text-align: center;
+  }
+
+  .menu-item-details {
+    text-align: center;
+  }
 }
 
 @media (max-width: 479px) {
+  .container .jumbotron {
+    background-repeat: no-repeat;
+    height: 100%;
+  }
+
   #menu-tile, #special-tile {
     width: 260px;
     height: 200px;
@@ -171,6 +303,16 @@ body {
   .navbar-brand span {
     font-size: 6vw;
   }
+
+  .col-xxs-12 {
+    position: relative;
+    min-height: 1px;
+    padding-right: 15px;
+    padding-left: 15px;
+    float: left;
+    width: 100%;
+  }
+
 }
 
 /* 
