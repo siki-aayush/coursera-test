@@ -8,6 +8,9 @@ body {
     background-color: #fff;
     color: #000;
 }
+.navbar-header .navbar-brand{
+    color: #000;
+}
 
 h1 {
     margin-bottom: 40px;
