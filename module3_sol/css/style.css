@@ -1,0 +1,28 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-size: 16px;
+    font-family: 'Oxygen', sans-serif;
+    background-color: #fff;
+    color: #000;
+}
+
+h1 {
+    margin-bottom: 40px;
+}
+
+
+#main-content h3 {
+    margin-top: 0;
+    margin-bottom: 15px;
+}
+
+.item-detail {
+    background-color: #808080;
+    padding: 20px;
+    text-align: justify;
+    font-size: 1.1em;
+    margin-bottom: 40px;
+}
