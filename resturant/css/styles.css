@@ -222,6 +222,11 @@ h3.menu-item-title {
   font-style: italic;
 }
 
+#loading {
+  width: 50px;
+  height: 50px;
+}
+
 /* large devices */
 @media (min-width: 1200px) {
   .container .jumbotron {
